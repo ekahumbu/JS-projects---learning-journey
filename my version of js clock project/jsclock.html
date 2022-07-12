@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+    <head>
+        <meta charset="utf-8">
+        <title>JS Clock</title>
+        <link rel="stylesheet" href="jsclock.css"/>
+    </head>
+    <body>
+        <div class="quote">
+            <p> "Better three hours too soon than a minute too late."<br> William Shakespeare.</p>
+        </div>
+        <div class="wrapper">
+            <div class="display">
+                <div id="time">
+                </div>
+            </div>
+            <span></span>
+            <span></span>
+        </div>
+        <script>
+            setInterval(() => {
+                const time = document.querySelector(".display", "time");
+                let date = new Date();
+                let hours = (date.getHours() < 10 ? '0': '') + date.getHours();  ;
+                let minutes = (date.getMinutes() < 10 ? '0': '') + date.getMinutes();
+                let seconds = (date.getSeconds() < 10 ? '0': '') + date.getMinutes();
+                let day_night = date.toLocaleTimeString([],{
+                    hour:"2-digit",
+                    minute:"2-digit",
+                    second:"2-digit"
+                });
+                time.textContent = day_night;
+            });
+        </script>    
+    </body>
+</html>
