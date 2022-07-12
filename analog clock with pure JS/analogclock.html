@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Analog Clock with Pure JS</title>
+        <link rel="stylesheet" href="analogclock.css"/>
+    </head>
+    <body>
+        <div class="clock">
+            <div class="hour">
+                <div class="hr" id="hr"></div>
+            </div>
+            <div class="minute">
+                <div class="min" id="min"></div>
+            </div>
+            <div class="second">
+                <div class="sec" id="sec"></div>
+            </div>
+            </div>
+            <div class="wrapper">
+                <div class="display">
+                    <div id="calendar"></div>
+                </div>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <script>
+            setInterval(() => {//set the units
+                date = new Date();
+                hrtime = date.getHours();
+                mintime = date.getMinutes();
+                sectime = date.getSeconds();
+                //set the unit rotations
+                hrrotation = 30 * hrtime + mintime/2;
+                minrotation = 6 * mintime;
+                secrotation = 6 * sectime;
+
+                hr.style.transform = `rotate(${hrrotation}deg)`;
+                min.style.transform = `rotate(${minrotation}deg)`;
+                sec.style.transform = `rotate(${secrotation}deg)`;
+            }, 1000);
+        </script>
+        <script>  
+            setInterval(()=> {
+                const calendar = document.querySelector(".display #calendar");
+                const weekDays = ['Sun','Mon','Tue','Wed','Thur','Fri','Sat'];
+                const monthName = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sept','Oct','Nov','Dec'];
+                let date = new Date();
+                var day = date.getDay();
+                var date1 = date.getDate((date1 < 10 ? '0' : '') + date.getDate());
+                var month = date.getMonth();
+                var year = date.getFullYear();
+
+                calendar.textContent = date1 + " " +monthName[month] + " " + year + " "+ weekDays[day];
+            });
+        </script>
+    </body>
+</html>
