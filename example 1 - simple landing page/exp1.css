@@ -1,0 +1,14 @@
+html{
+ background-color: bisque;
+}
+.alert{
+    color: blue;
+}
+body{
+    margin: auto;
+    text-align: center;
+}
+em{
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

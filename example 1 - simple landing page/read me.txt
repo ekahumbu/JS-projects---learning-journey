@@ -1,0 +1,10 @@
+this is a basic landing page for a construction company
+What has been done:
+1. basic html layout
+2. js script that sends out a greeting based on real time
+3. style done using CSS only:
+	# font from google
+	#images from unsplash
+
+to be done:
+css styling
