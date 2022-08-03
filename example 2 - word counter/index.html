@@ -8,15 +8,16 @@
     </head>
     <body>
         <h1>Custom Signage</h1>
-        <div id="cost" class="sign">Cost: Kshs 50 per letter</div>
-        <form id="form">
-            <textarea id="input" rows="10" placeholder="type your words here..."></textarea>
-            <br>
-            <button type="button" id="total">Submit</button>
-            <h2>Letter Count: <span id="count"> 0</span></h2>
-            <br>
-            <h3>Total<span id="submit"> 0</span></h3>
-        </form>
+        <div class="form">
+            <label for="getWord">Enter a word: </label>
+            <input type="text" id="getWord" class="getWord">
+            <input type="submit" value="Submit word" class="wordSubmit">
+          </div>
+      
+          <div class="resultParam">
+            <p class="wordCount"></p>
+            <p class="wordCost"></p>
+          </div>
         <script src="exp2.js"></script>
     </body>
 </html>
