@@ -1,0 +1,19 @@
+html {
+    margin: 0px;
+    background-image: linear-gradient(
+        to bottom right, #95d9f9 , #ae4bc3
+    );
+    overflow-x: hidden;
+}
+h1 {
+    font-family: tahoma, sans-serif;
+    opacity: 60%;
+    position: absolute;
+}
+.globe {
+    text-align: center;
+    margin-top: 150px;
+}
+.globe_image {
+    height: 70vh;
+}

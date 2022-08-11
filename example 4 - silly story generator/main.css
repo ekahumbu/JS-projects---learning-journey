@@ -1,0 +1,28 @@
+html{
+  background-image: url(butterfly.jpg);
+  justify-content: center;
+  
+}
+body {
+    font-family: helvetica, sans-serif;
+  }
+
+label{
+    font-weight: bold;  
+  }
+
+div{
+    padding-bottom: 20px;
+  }
+
+input[type="text"] {
+    padding: 5px;
+    width: 150px;
+  }
+
+p{
+    background: pink;
+    color: blueviolet;
+    padding: 10px;
+    visibility: hidden;
+  }
