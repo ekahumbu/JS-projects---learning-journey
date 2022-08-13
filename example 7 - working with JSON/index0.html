@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta name="viewport" content="user-scalable=no, width=device-width" /> 
+        <link rel="stylesheet" type="text/css" href="webapp.css"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Bangers&family=Cinzel&display=swap" rel="stylesheet">
+        <title>Quiz App</title> 
+        <script type="text/javascript" src="webapp.json"></script> 
+    </head>
+    <body> 
+        <div id="header"> 
+            <h1><span id="quizLength"></span> Questions<br>The Quiz App</h1>
+            <span id="menu"></span> 
+            <div id="menubox" style="display: none;"> <br>
+                <a href="addques.html" alt="add questions" title="add questions"> Add Questions </a><br><br> 
+                <a href="removeque.html" alt="remove questions" title="remove questions"> Drop Questions </a> 
+                <span id="menudismiss"> X </span> 
+            </div> 
+        </div> 
+        <div class="quiz-wrapper"> 
+            <div id="quiz"></div> 
+        </div> 
+        <button id="previous"><p>Previous Question</p></button> 
+        <button id="next"><p>Next Question</p></button> 
+        <button id="submit"><p>Submit Quiz</p></button> 
+        <div id="results"></div> 
+        <button id="tryAgain"><p>Try Again</p></button>
+        <h2>Countdown Timer</h2> 
+        <div id="clockdiv"> 
+            <div class="smalltext">Minutes <span class="minutes"></span></div>
+            <div class="smalltext">Seconds <span class="seconds"></span> </div> 
+        </div>
+        <div id="footer"> <h5>Written by Eddah Dena &copy Copyright 2022</h5> </div> 
+        <script src="webapp.js"></script> 
+        <script src="countdown.js"></script> 
+        <script src="menu.js"></script>
+    </body> 
+</html>
