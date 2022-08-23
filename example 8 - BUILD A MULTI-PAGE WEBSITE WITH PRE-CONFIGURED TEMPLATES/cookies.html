@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width"/>
+        <title>Web</title>
+        <link rel="stylesheet" href="main.css"/> 
+    </head> 
+    <body> 
+        <div id="menu" include-html="layout/menu.html"></div> 
+        <div id="header" include-html="layout/header.html"></div> 
+        <div id="main_content2"> 
+            <img src="images/policies.png" alt="policiesicon" class="content_header_img"/>
+            <h1>Cookies Policy</h1>
+            <div id="lorem_ipsum" include-html="layout/dummy_content.html"></div> 
+        </div> 
+        <div id="sitemap" include-html="layout/sitemap.html"></div> 
+        <div id="footer" include-html="layout/footer.html"></div> 
+        <script src="js/include.js"></script> 
+        <script>
+            let x = 0;
+            first();
+            if(x === 1){second();}
+        </script>
+    </body> 
+</html>
